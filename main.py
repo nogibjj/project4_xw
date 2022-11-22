@@ -1,9 +1,8 @@
 from fastapi import FastAPI
+import uvicorn
 
-# 创建 api 对象
 app = FastAPI() 
 
-# 根路由
 @app.get("/") 
 async def root():
     return {"fastapi": "fastapi"}
@@ -22,3 +21,7 @@ async def read_item(item_id: str, q: str = None, short: bool = False):
             {"description": "This is an amazing item that has a long description"}
         )
     return item
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, port=8080, host="0.0.0.0")

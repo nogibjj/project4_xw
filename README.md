@@ -6,3 +6,8 @@
 * Push tested source code to Github and perform Continuous Integration with Github Actions (or similar SaaS Build service)
 * Configure Build Server to Deploy Changes on build (Continuous Delivery)
 * Create realistic API (reference here: Data Engineering: Chapter 5 aws chapter for pragmatic ai.)
+
+
+## containerzed fast api
+`docker build .`
+`docker image ls`
