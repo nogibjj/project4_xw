@@ -3,3 +3,4 @@ uvicorn
 pytest==7.1.1
 pylint==2.13.5
 black==22.3.0
+pydantic
